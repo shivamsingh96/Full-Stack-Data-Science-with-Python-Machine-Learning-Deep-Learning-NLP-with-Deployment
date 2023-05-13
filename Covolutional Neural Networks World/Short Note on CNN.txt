@@ -1,0 +1,44 @@
+Limitations of ANN for Image Classification task.
+
+Standard artificial neural networks (ANNs) have some limitations when it comes to real image classification tasks:
+
+1. Large number of parameters: ANNs require a large number of parameters to be trained on image data. This can make training the network computationally expensive and time-consuming.
+
+2. Lack of spatial awareness: ANNs do not have any built-in understanding of the spatial relationships between pixels in an image. This means that ANNs may not be able to capture important features of an image that depend on spatial relationships between pixels, such as edges and corners.
+
+3. Limited ability to handle varying input sizes: ANNs are typically designed to handle fixed-size input data. This can be a problem for image classification tasks, where images may vary in size and aspect ratio.
+
+4. Limited interpretability: ANNs can be difficult to interpret, especially when they are trained on large, complex datasets. This can make it difficult to understand why the network is making certain classifications or to diagnose errors.
+
+Due to these limitations, standard ANNs are often not the best choice for real image classification tasks. Instead, convolutional neural networks (CNNs) are typically used for these tasks, as they are designed to handle the spatial relationships between pixels in an image and can handle varying input sizes. Additionally, CNNs have been shown to perform better than ANNs on many image classification tasks.
+
+
+
+
+Why we prefer CNN over ANN?
+
+Convolutional neural networks (CNNs) are often preferred over standard artificial neural networks (ANNs) for image classification tasks for several reasons:
+
+Local connectivity: In CNNs, neurons are only connected to a small subset of the input data. This means that CNNs can take advantage of the local structure in images, such as edges and corners, which are important for image classification tasks.
+
+Parameter sharing: In CNNs, the same set of parameters is used for multiple regions of an image. This can greatly reduce the number of parameters that need to be learned and can improve the generalization ability of the model.
+
+Pooling: In CNNs, pooling layers are often used to downsample the output of convolutional layers. This can help reduce the dimensionality of the data and make the model more robust to small translations of the input data.
+
+Pretrained models: CNNs can be pretrained on large, general-purpose datasets like ImageNet and then fine-tuned on specific image classification tasks. This can greatly reduce the amount of labeled data needed to train a model and can improve the accuracy of the model.
+
+Overall, CNNs are well-suited for image classification tasks due to their ability to take advantage of the local structure in images and their ability to learn useful representations of the data through the use of convolutional layers and pooling layers.
+
+
+
+CNN is Short.
+
+Convolutional neural networks (CNNs) are a type of deep neural network that is widely used for image classification, object detection, and other computer vision tasks. A CNN consists of several layers that work together to extract and process information from an input image. The layers of a CNN typically include:
+
+1. Convolutional layers: These layers apply a set of learned filters to the input image to produce a set of feature maps. Each filter is applied to a small region of the input image, and the resulting feature map highlights the presence of that feature in the input.
+
+2. Pooling layers: These layers downsample the feature maps produced by the convolutional layers, typically by taking the maximum or average value over small regions of the map. This helps to reduce the dimensionality of the data and makes the model more robust to small translations of the input image.
+
+3. Fully connected layers: These layers take the output of the convolutional and pooling layers and apply a set of learned weights to produce a set of class scores. The class scores can then be used to make a prediction about the class of the input image.
+
+CNNs are particularly well-suited to image classification tasks because they can take advantage of the local structure in images, such as edges and corners, and can learn to recognize important features of an image regardless of their location within the image. Additionally, CNNs can be trained on large, labeled datasets like ImageNet, which allows them to learn to recognize a wide variety of objects and features.
